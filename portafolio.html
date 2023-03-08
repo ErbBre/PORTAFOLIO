@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/icon_web.png">
+    <title>Breyner | Portafolio</title>
+    <link rel="stylesheet" href="css/p_style.css">
+
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header> <!--.contenedor-header header-->
+            <div class="logo">
+                <a href="#">Breyner</a> <!--.contenedor-header  header .logo a-->
+            </div>
+            <nav id="nav" class="responsive">
+                <ul>
+                    <!-- PARA QUE TE -->
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi"onclick="seleccionar()">SOBRE MÍ</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curr"   onclick="seleccionar()">CURRÍCULUM</a></li>
+                    <li><a href="#port"   onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <!-- <li><a href="#cont">CONTACTO</a></li> -->
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrar_ocultar_menu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+                <!-- FOTO DE PERFIL -->
+            <div class="contenedor-img">
+                <img src="img/perfil.png" alt="">
+            </div>
+            <!-- DATOS PERSONALES -->
+            <h1>BREYNER JHURLENS</h1>
+            <h2>Ing. de Software</h2>
+            <!-- DIV PARA REDES SOCIALES -->
+            <div class="redes_s">
+                <!-- <a href="http://" id="fb" title="MI PERFIL EN FACEBOOK"><i class="fa-brands fa-square-facebook"></i></a> -->
+                <a target="_blank" href="https://wa.me/51921990278" id="wh" title="CHATEA CONMIGO POR WHATSAPP"><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a target="_blank" href="mailto:breyimp@gmail.com?Subject=QUEREMOS%20CONTRATARTE%20" id="gm" title="ENVÍAME UN CORREO"><i class="fa-sharp fa-solid fa-square-envelope"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/breyner-j-55847320a/" id="li" title="MI PERFIL EN LINKEDIN"><i class="fa-brands fa-linkedin"></i></a>
+                <a target="_blank" href="tel:+51921990278" id="call" title="LLAMADA DIRECTA"><i class="fa-solid fa-square-phone"></i></i></a>
+            </div>
+        </div>    
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Breyner. </span>Me especializo en diseñar y desarrollar software a medida con lenguajes como; java y python y en la web con javascript, HTML y CSS. En la actualidad me encuentro cursando una segunda profesión en Ing. Electrónica y laboralmente busco desarrollar mis habilidades en conjunto con la empresa en áreas relacionadas con la tecnología.</p>
+            <div class="fila">
+                <!-- DATOS PERSONALES -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>29-10-2002
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>921 990 278
+                        </li>
+                        <li>
+                            <strong>Email</strong>breyimp@gmail.com
+                        </li>
+                        <li>
+                            <strong>Ubicación</strong>Lima, Perú
+                        </li>
+                        <li>
+                            <strong>Último cargo</strong><span>Asesor de Ventas</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- INTERESES -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOGRAFÍA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>PROGRAMACIÓN</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-running"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOMÓVILES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-pencil"></i>
+                            <span>ARTE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills"> <!-- class para acceder desde css y id para ir desde el boton del navegador-->
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <!-- JAVASCRIPT -->
+                    <div class="skill">
+                        <span>JAVASCRIPT</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- HTML CSS -->
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlCss">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PYTHON -->
+                    <div class="skill">
+                        <span>PYTHON</span>
+                        <div class="barra-skill">
+                            <div class="progreso python">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- JAVA -->
+                    <div class="skill">
+                        <span>JAVA</span>
+                        <div class="barra-skill">
+                            <div class="progreso java">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PHOTOSHOP -->
+                    <div class="skill">
+                        <span>PHOTOSHOP</span>
+                        <div class="barra-skill">
+                            <div class="progreso photoshop">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ILUSTRATOR -->
+                    <div class="skill">
+                        <span>ILUSTRATOR</span>
+                        <div class="barra-skill">
+                            <div class="progreso ilustrator">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BASE DE DATOS -->
+                    <div class="skill">
+                        <span>BASE DE DATOS</span>
+                        <div class="barra-skill">
+                            <div class="progreso bd">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MS OFFICE -->
+                    <div class="skill">
+                        <span>MS OFFICE</span>
+                        <div class="barra-skill">
+                            <div class="progreso msO">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SEGUNDA COLUMNA -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>TRABAJO EN EQUIPO</span>
+                        <div class="barra-skill">
+                            <div class="progreso tee">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CREATIVIDAD</span>
+                        <div class="barra-skill">
+                            <div class="progreso crea">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>COMUNICACIÓN</span>
+                        <div class="barra-skill">
+                            <div class="progreso com">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>RESPONSABILIDAD</span>
+                        <div class="barra-skill">
+                            <div class="progreso res">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- INGLES -->
+                    <div class="skill">
+                        <span>INGLÉS</span>
+                        <div class="barra-skill">
+                            <div class="progreso ing">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section class="curr" id="curr">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>ING. DE SOFTWARE</h4>
+                        <span class="casa">Servicio Nacional de Adiestramiento en Trabajo Industrial - SENATI</span>
+                        <p>Una de las ramas de las ciencias de la computación que estudia la creación de software confiable y de calidad, basandose en métodos y técnicas de ingeniería brindando soporte operacional y de mantenimiento.</p>
+                        <span class="fecha">ENERO 2019 - DICIEMBRE 2021</span>
+                    </div>
+                    <div class="item izq">
+                        <h4>CERTIFICACIÓN EN SEGURIDAD INFORMÁTICA Y NUEVAS TECNOLOGÍAS DE LA INFORMACIÓN Y COMUNICACIÓN</h4>
+                        <span class="casa">Servicio Nacional de Adiestramiento en Trabajo Industrial - SENATI</span>
+                        <p>40 horas</p>
+                        <span class="fecha">NOVIEMBRE DE 2019</span>
+                    </div>
+                    <div class="item izq">
+                        <h4>CERTIFICACIÓN EN ARQUITECTURA, MANTENIMIENTO DE COMPUTADORAS Y TECNOLOGÍAS DE REDES INFORMÁTICAS</h4>
+                        <span class="casa">INSTITUTO LA CATÓLICA</span>
+                        <p>120 HORAS</p>
+                        <span class="fecha">JULIO-AGOSTO DE 2018</span>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>ASESOR DE VENTAS</h4>
+                        <span class="casa">PC HUÁNUCO S.A.C<span>
+                        <p>Brindar información sobre productos tecnológicos que se adapten a la necesidad del cliente o usuario final.</p>
+                        <span class="fecha">ABRIL - DICIEMBRE 2022</span>
+                    </div>
+                    <div class="item der">
+                        <h4>FRELANCER</h4>
+                        <span class="casa">Junta Administradora de Servicios de Saneamiento - JASS<span>
+                        <p>Diseño y desarrollo de un sistema de escritorio para la administración del centro poblado Nauyan - Rondos - Huánuco.</p>
+                        <span class="fecha">ENERO - FEBRERO - 2022</span>
+                    </div>
+                    <div class="item der">
+                        <h4>PRÁCTICA PRE PROFESIONAL</h4>
+                        <span class="casa">FERRETERIA EL PERNO<span>
+                        <p>Diseño y desarrollo de un sistema de escritorio para la gestión del inventario y administración de caja(sin facturación electrónica) con cuentas independientes para cada empleado.</p>
+                        <span class="fecha">AGOSTO - NOVIEMBRE- 2021</span>
+                    </div>
+                </div>
+            </div>
+            <a class="download_cv" href = "cv/CV-BREYNER.pdf" download>
+                <span class="overlay"></span>Descargar CV
+                <i class="fa-solid fa-down-long"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section class="port" id="port">
+        <div class="columna_port">
+            <h2>Portafolio</h2>
+            <div class="fila_port">
+                <div class="text">
+                    <p>SISPERNO es un sistema de escritorio creado como solución al problema en el inventario de la empresa, fue desarrollado al 100% con Python, Sqlite para la base de datos, librerias como; Tkinter, openpyxl, PIL y MatplotLib para la creación de gráficos, cuenta con:</p>
+                    <h4>• Notificación de stock bajo</h4>
+                    <h4>• Gráficos estadisticos de ventas para cada empleado</h4>
+                    <h4>• Importación de datos excel hacia el sistema</h4>
+                    <h4>• Manejo de 2 cuentas (Empleado y Administrador)</h4>
+                    <h4>• Fecha y hora en tiempo real</h4>
+                    <h4>• Ventas</h4>
+                    <h4>• Administración de Caja</h4>
+                    <h4>• Manejo de Proveedores y clientes</h4>
+                </div>
+                <div class="img_port">
+                    <img src="img/FERRET.png" alt="">
+                </div>
+            </div>
+            <div class="fila_port">
+                <div class="text">
+                    <p>Sistema de Control de Pagos de servicio de agua potable, para su desarrollo se uso Python, Sqlite y librerias como openpyxl para el manejo de libros excel, cuenta con opciones como 'consulta' donde se muestran resultados generales como pagos, multas y notas sobre el cliente y cuenta con:</p>
+                    <h4>• Buscador inteligente</h4>
+                    <h4>• Administración de Caja</h4>
+                    <h4>• Administración de Datos personales de clientes</h4>
+                    <h4>• Registro de Cobranza</h4>
+                    <h4>• Fecha y hora en tiempo real</h4>
+                    <h4>• Exportación de datos a Excel</h4>
+                </div>
+                <div class="img_port">
+                    <img src="img/jass.png" alt="">
+                </div>
+            </div>
+            <div class="fila_port">
+                <div class="text">
+                    <p>Software que permite la comunicación en el área local (cliente - servidor) usando la libreria 'socket' ademas de ello se uso:</p>
+                    <h4>• PUERTOS</h4>
+                    <h4>• TKINTER para la interfaz gráfica</h4>
+                    <h4>• Threading para varios procesos al mismo tiempo</h4>
+                </div>
+                <div class="img_port">
+                    <img src="img/chat.png" alt="">
+                </div>
+            </div>
+            <div class="fila_port">
+                <div class="text">
+                    <p>CALCULADORA CON FUNCIONALIDAD BÁSICA, cuenta con botón que emula el encendido y apagado como uno físico, las librerias usadas son:</p>
+                    <h4>• TKINTER</h4>
+                    <h4>• Math para las operaciones matemáticas</h4>
+                </div>
+                <div class="img_port">
+                    <img src="img/calculadora.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION CONTACTO -->
+    <section class="cont" id="cont">
+
+    </section>
+    <!-- SECCION CONTACTO -->
+    <footer class="foot">
+        <h1 class="dev">Desarrollado por Breyner 2021</h1>
+        <h2 class="direc">LIMA, PERÚ</h2>
+    </footer>
+    <script src="JS/script.js"></script>
+
+</body>
+</html>
